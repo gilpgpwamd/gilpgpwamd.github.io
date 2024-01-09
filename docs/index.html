@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>PWA con MD</title>
+
+ <meta name="description"
+   content="Ejemplo de PWA con
+    Material Design">
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <meta
+   name="apple-mobile-web-app-title"
+   content="PWA con MD">
+ <meta
+   name="apple-mobile-web-app-capable"
+   content="yes">
+ <meta
+   name="apple-mobile-web-app-status-bar-style"
+   content="default">
+ <link rel="apple-touch-icon"
+   href="img/maskable_icon.png">
+ <link rel="apple-touch-icon"
+   sizes="48x48"
+   href="img/maskable_icon_x48.png">
+ <link rel="apple-touch-icon"
+   sizes="72x72"
+   href="img/maskable_icon_x72.png">
+ <link rel="apple-touch-icon"
+   sizes="96x96"
+   href="img/maskable_icon_x96.png">
+ <link rel="apple-touch-icon"
+   sizes="128x128"
+   href="img/maskable_icon_x128.png">
+ <link rel="apple-touch-icon"
+   sizes="192x192"
+   href="img/maskable_icon_x192.png">
+ <link rel="apple-touch-icon"
+   sizes="384x384"
+   href="img/maskable_icon_x384.png">
+ <link rel="apple-touch-icon"
+   sizes="512x512"
+   href="img/maskable_icon_x512.png">
+
+ <!-- Configuración de todas las
+   páginas y colores con CSS. -->
+ <link rel="stylesheet"
+   href="css/estilos.css">
+
+ <!-- Para manejar customized
+   built-in elements en Safari -->
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+
+ <!-- Configuración de todas las
+   páginas con JavaSript. -->
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar
+   class="center-aligned">
+
+  <h1>PWA con MD</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+  <button type="button"
+    title="Perfil" slot="action"
+    class="md-standard-icon-button avatar">
+   <span
+     class="material-symbols-outlined">
+    account_circle
+   </span>
+  </button>
+
+ </md-top-app-bar>
+
+ <main>
+  <p>
+   Esta es la página principal de
+   la app. Las X que siguen son
+   para que veas como se comporta
+   cuando se hace scroll.
+  </p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+ </main>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Formulario - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <link rel="stylesheet"
+   href="css/estilos.css">
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <form id="form" novalidate
+   onsubmit="procesa(event)">
+
+  <md-top-app-bar>
+
+   <h1>Formulario</h1>
+
+   <button is="md-menu-button"
+     slot="navigation"
+     onclick="nav.abre()"></button>
+
+  </md-top-app-bar>
+
+  <main>
+
+   <md-filled-text-field
+     id="campoGenero">
+    <span id="etiquetaGenero"
+      accesskey="G">
+     Género*
+    </span>
+    <md-select-menu
+      id="selectGenero"
+      slot="input-text" required
+      aria-labelledby="etiquetaGenero"
+      options="opcionesDeGenero"
+      oninput="copiaMensajes()">
+    </md-select-menu>
+    <small id="supportingGenero"
+      slot="supporting">
+     * Obligatorio
+    </small>
+   </md-filled-text-field>
+
+   <p>
+    <button
+      class="md-filled-button"
+      style="width: 100%;">
+     Recomendar
+    </button>
+   </p>
+
+  </main>
+
+  <md-options-menu
+    id="opcionesDeGenero"
+    name="genero"
+    aria-label="Opciones de género">
+
+   <label>
+    <input type="radio"
+      name="genero" value=""
+      title="Selecciona género">
+   </label>
+
+   <label>
+    <input type="radio"
+      name="genero" value="pop">
+    Pop
+   </label>
+
+   <label>
+    <input type="radio"
+      name="genero" value="reg">
+    Reguetón
+   </label>
+
+  </md-options-menu>
+
+  <nav-drw id="nav"></nav-drw>
+
+ </form>
+
+ <script type="module">
+  import {
+   muestraError
+  } from "./lib/js/muestraError.js"
+  import {
+   muestraTextoDeAyuda
+  } from "./lib/js/muestraTextoDeAyuda.js"
+
+  function copiaMensajes() {
+   muestraTextoDeAyuda(
+    selectGenero, supportingGenero,
+    "* Obligatorio")
+  }
+  window["copiaMensajes"] =
+   copiaMensajes
+
+  /**
+   * @param {SubmitEvent} evt
+   */
+  function procesa(evt) {
+   evt.preventDefault()
+   try {
+    copiaMensajes()
+    if (
+     selectGenero.validity.valid) {
+     const genero =
+     selectGenero.value
+     const resultado =
+      recomienda(genero)
+     alert(resultado)
+    }
+   } catch (e) {
+    muestraError(e)
+   }
+  }
+  window["procesa"] = procesa
+
+  /** @param {string} genero */
+  function recomienda(genero) {
+   if (genero === "pop") {
+    return "Para el pop te " +
+     "recomiendo a Dua Lipa."
+   } else if (genero === "reg") {
+    return "Para el reguetón te " +
+     "recomiendo a Bad Bunny."
+   }
+  }
+ </script>
+
+</body>
+
+</html>

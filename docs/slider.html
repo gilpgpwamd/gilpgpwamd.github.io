@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Sliders - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <link rel="stylesheet"
+   href="css/estilos.css">
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar>
+
+  <h1>Sliders</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+ </md-top-app-bar>
+
+ <main>
+
+  <md-slider-field>
+   <label>Rango</label>
+   <input type="range"
+     slot="slider" min="1"
+     max="10">
+   <small slot="supporting">
+    Calcúlalo bien
+   </small>
+  </md-slider-field>
+
+ </main>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>

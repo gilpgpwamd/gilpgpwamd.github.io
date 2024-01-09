@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Select - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <link rel="stylesheet"
+   href="css/estilos.css">
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar>
+
+  <h1>Select</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+ </md-top-app-bar>
+
+ <main>
+
+  <md-filled-text-field
+    id="campoGrupo"
+    class="nopadding" value="IC22">
+   <span id="etiquetaGrupo"
+     accesskey="G">
+    Grupo*
+   </span>
+   <md-select-menu id="selectGrupo"
+     slot="input-text" required
+     aria-labelledby="etiquetaGrupo"
+     options="opcionesDeGrupo">
+   </md-select-menu>
+   <small slot="supporting">
+    *Requerido
+   </small>
+  </md-filled-text-field>
+
+ </main>
+
+ <md-options-menu
+   id="opcionesDeGrupo"
+   aria-label="Opciones de grupo">
+
+  <label>
+   <input type="radio"
+     name="grupo" value=""
+     title="Selecciona opción">
+  </label>
+
+  <label>
+   <input type="radio"
+     name="grupo" value="IC21">
+   IC-21
+  </label>
+
+  <label>
+   <input type="radio"
+     name="grupo" value="IC22">
+   IC-22
+  </label>
+
+  <label>
+   <input type="radio"
+     name="grupo" value="IC23">
+   IC-23
+  </label>
+
+ </md-options-menu>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>

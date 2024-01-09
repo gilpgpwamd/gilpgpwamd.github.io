@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Íconos - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <link rel="stylesheet"
+   href="css/estilos.css">
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar>
+
+  <h1>Íconos</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+ </md-top-app-bar>
+
+ <main>
+
+  <button type="button"
+    class="md-standard-icon-button">
+   <span
+     class="material-symbols-outlined">
+    favorite
+   </span>
+  </button>
+
+  <button type="button"
+    class="md-standard-icon-button"
+    disabled>
+   <span
+     class="material-symbols-outlined">
+    bolt
+   </span>
+  </button>
+
+  <a href="https://google.com"
+    class="md-standard-icon-button">
+   <span
+     class="material-symbols-outlined">
+    star
+   </span></a>
+
+  <span
+    class="material-symbols-outlined">
+   thumb_up
+  </span>
+
+ </main>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>

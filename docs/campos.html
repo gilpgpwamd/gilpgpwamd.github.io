@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Campos de texto - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <link rel="stylesheet"
+   href="css/estilos.css">
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar
+   headline="headline">
+
+  <h1>Texto</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+ </md-top-app-bar>
+
+ <h1 id="headline">
+  Campos de texto
+ </h1>
+
+ <main>
+
+  <md-filled-text-field value="Saludo">
+   <label for="saludo">
+    Saludo
+   </label>
+   <output id="saludo"
+     slot="input-text"></output>
+  </md-filled-text-field>
+
+  <md-filled-text-field>
+   <label for="nombre">
+    Nombre*
+   </label>
+   <input id="nombre"
+     slot="input-text" required>
+   <small slot="supporting">
+    *Requerido
+   </small>
+  </md-filled-text-field>
+
+  <md-filled-text-field>
+   <label for="email"
+     accesskey="M">
+    Email
+   </label>
+   <input id="email"
+     slot="input-text" type="email"
+     oninput="
+     campoDireccion.value =
+      this.value">
+  </md-filled-text-field>
+
+  <!-- Usa class="float" cuando
+   quieras que la etiqueta esté
+   arriba todo el tiempo. -->
+  <md-filled-text-field class="float">
+   <label for="fecha">
+    Fecha
+   </label>
+   <input id="fecha"
+     slot="input-text" type="date">
+  </md-filled-text-field>
+
+  <md-filled-text-field
+    id="campoDireccion">
+   <label for="direccion">
+    Dirección
+   </label>
+   <textarea id="direccion"
+     rows="3"
+     slot="input-text"></textarea>
+  </md-filled-text-field>
+
+ </main>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>

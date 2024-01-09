@@ -1,0 +1,245 @@
+[is="md-switch"] {
+ appearance: none;
+ -webkit-appearance: none;
+ vertical-align: middle;
+}
+
+[is="md-switch"]:focus {
+ outline: none;
+}
+
+[is="md-switch"].material {
+ box-sizing: border-box;
+ width: 52px;
+ height: 32px;
+ border-radius: 16px;
+ background-color: var(--md-sys-color-primary);
+ border: 2px solid var(--md-sys-color-outline);
+}
+
+[is="md-switch"].material::-webkit-slider-runnable-track {
+ height: 28px;
+ border-radius: 14px;
+ background-color: var(--md-sys-color-primary);
+}
+
+[is="md-switch"].material.unselected::-webkit-slider-runnable-track {
+ background-color: var(--md-sys-color-surface-container-highest);
+}
+
+[is="md-switch"].material::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ height: 24px;
+ width: 24px;
+ border-radius: 12px;
+ margin-top: 2px;
+ margin-left: -2px;
+ background-color: var(--md-sys-color-on-primary);
+ box-shadow: var(--md-box_shadow_level1);
+}
+
+[is="md-switch"].material.unselected::-webkit-slider-thumb {
+ height: 16px;
+ width: 16px;
+ border-radius: 8px;
+ margin-top: 6px;
+ margin-left: 6px;
+ background-color: var(--md-sys-color-outline);
+}
+
+[is="md-switch"].material:hover::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 8px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-hover-transparency-percentage));
+}
+
+[is="md-switch"].material.unselected:hover::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 12px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-hover-transparency-percentage));
+}
+
+[is="md-switch"].material:focus::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 8px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-focus-transparency-percentage));
+}
+
+[is="md-switch"].material.unselected:focus::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 12px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-focus-transparency-percentage));
+}
+
+[is="md-switch"].material:active::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ width: 28px;
+ height: 28px;
+ border-radius: 14px;
+ margin-top: 0;
+ margin-left: 0;
+ background-position: center;
+ background-image:
+  radial-gradient(circle, var(--md-riple-color) 1%, transparent 1%);
+ background-size: 100%;
+ animation-name: md-ripple;
+ animation-duration: var(--md-sys-motion-duration-500);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 6px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-pressed-transparency-percentage)) !important;
+}
+
+[is="md-switch"].material.unselected:active::-webkit-slider-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ background-image:
+  radial-gradient(circle, var(--md-sys-color-primary-container) 1%, transparent 1%);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 6px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-pressed-transparency-percentage)) !important;
+}
+
+[is="md-switch"].material::-moz-range-track {
+ height: 28px;
+ border-radius: 14px;
+ background-color: var(--md-sys-color-primary);
+}
+
+[is="md-switch"].material.unselected::-moz-range-track {
+ background-color: var(--md-sys-color-surface-container-highest);
+}
+
+[is="md-switch"].material::-moz-range-thumb {
+ height: 24px;
+ width: 24px;
+ border-radius: 12px;
+ background-color: var(--md-sys-color-on-primary);
+ box-shadow: var(--md-box_shadow_level1);
+}
+
+[is="md-switch"].material.unselected::-moz-range-thumb {
+ height: 16px;
+ width: 16px;
+ border-radius: 8px;
+ background-color: var(--md-sys-color-outline);
+}
+
+[is="md-switch"].material:hover::-moz-range-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ box-shadow: var(--md-box_shadow_level1), var(--md-box_shadow_level1), 0 0 0 8px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-hover-transparency-percentage));
+}
+
+[is="md-switch"].material.unselected:hover::-moz-range-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 12px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-hover-transparency-percentage));
+}
+
+[is="md-switch"].material:focus::-moz-range-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 8px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-focus-transparency-percentage));
+}
+
+[is="md-switch"].material.unselected:focus::-moz-range-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 12px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-focus-transparency-percentage));
+}
+
+[is="md-switch"].material:active::-moz-range-thumb {
+ background-color: var(--md-sys-color-primary-container);
+ width: 28px;
+ height: 28px;
+ border-radius: 14px;
+ background-position: center;
+ background-image:
+  radial-gradient(circle, var(--md-riple-color) 1%, transparent 1%);
+ background-size: 100%;
+ animation-name: md-ripple;
+ animation-duration: var(--md-sys-motion-duration-500);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 6px color-mix(in srgb, var(--md-sys-color-primary), transparent var(--state-pressed-transparency-percentage)) !important;
+}
+
+[is="md-switch"].material.unselected:active::-moz-range-thumb {
+ background-color: var(--md-sys-color-on-surface-variant);
+ background-image:
+  radial-gradient(circle, var(--md-sys-color-primary-container) 1%, transparent 1%);
+ box-shadow: var(--md-box_shadow_level1), 0 0 0 6px color-mix(in srgb, var(--md-sys-color-on-surface), transparent var(--state-pressed-transparency-percentage)) !important;
+}
+
+[is="md-switch"].apple {
+ width: 3rem;
+ border-radius: 14px;
+ height: 28px;
+}
+
+[is="md-switch"].apple::-webkit-slider-runnable-track {
+ background-color: var(--colIntIosOnBk);
+ border-radius: 14px;
+ height: 28px;
+}
+
+[is="md-switch"].apple:focus::-webkit-slider-runnable-track {
+ background-color: var(--colIntIosOnBkFc);
+}
+
+[is="md-switch"].apple.unselected::-webkit-slider-runnable-track {
+ background-color: var(--colIntIosOffBk);
+}
+
+[is="md-switch"].apple.unselected:focus::-webkit-slider-runnable-track {
+ background-color: var(--colIntIosOffBkFc);
+}
+
+[is="md-switch"].apple::-webkit-slider-thumb {
+ margin-top: 1px;
+ width: 26px;
+ height: 26px;
+ background-color: var(--colIntIos);
+ border-width: thin;
+ border-style: solid;
+ border-color: var(--colIntIosOnBk);
+ border-radius: 13px;
+ -webkit-appearance: none;
+}
+
+[is="md-switch"].apple:focus::-webkit-slider-thumb {
+ border-color: var(--colIntIosOnBkFc);
+}
+
+[is="md-switch"].apple.unselected::-webkit-slider-thumb {
+ border-color: var(--colIntIosOffBk);
+}
+
+[is="md-switch"].apple.unselected:focus::-webkit-slider-thumb {
+ border-color: var(--colIntIosOffBkFc);
+}
+
+[is="md-switch"].apple::-moz-range-track {
+ background-color: var(--colIntIosOnBk);
+ border-radius: 14px;
+ height: 28px;
+}
+
+[is="md-switch"].apple:focus::-moz-range-track {
+ background-color: var(--colIntIosOnBkFc);
+}
+
+[is="md-switch"].apple.unselected::-moz-range-track {
+ background-color: var(--colIntIosOffBk);
+}
+
+[is="md-switch"].apple.unselected:focus::-moz-range-track {
+ background-color: var(--colIntIosOffBkFc);
+}
+
+[is="md-switch"].apple::-moz-range-thumb {
+ width: 26px;
+ height: 26px;
+ background-color: var(--colIntIos);
+ border-width: thin;
+ border-style: solid;
+ border-color: var(--colIntIosOnBk);
+ border-radius: 13px;
+}
+
+[is="md-switch"].apple:focus::-moz-range-thumb {
+ border-color: var(--colIntIosOnBkFc);
+}
+
+[is="md-switch"].apple.unselected::-moz-range-thumb {
+ border-color: var(--colIntIosOffBk);
+}
+
+[is="md-switch"].apple.unselected:focus::-moz-range-thumb {
+ border-color: var(--colIntIosOffBkFc);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+   content="width=device-width">
+
+ <title>
+  Vista secundaria - PWA con MD
+ </title>
+
+ <meta name="theme-color"
+   content="#fffbfe">
+ <link rel="icon" sizes="32x32"
+   href="favicon.ico">
+ <link rel="manifest"
+   href="site.webmanifest">
+
+ <!-- Configuración de todas las
+   páginas y colores con CSS. -->
+ <link rel="stylesheet"
+   href="css/estilos.css">
+
+ <!-- Para manejar customized
+   built-in elements en Safari -->
+ <script
+   src="ungap/custom-elements.js">
+   </script>
+
+ <!-- Configuración de todas las
+   páginas con JavaSript. -->
+ <script type="module"
+   src="js/configura.js"></script>
+
+</head>
+
+<body>
+
+ <md-top-app-bar class="medium"
+   headline="h1Headline">
+
+  <h1>Secundaria</h1>
+
+  <button is="md-menu-button"
+    slot="navigation"
+    onclick="nav.abre()"></button>
+
+  <button type="button"
+    title="Agregar" slot="action"
+    class="md-standard-icon-button">
+   <span
+     class="material-symbols-outlined">
+    add
+   </span>
+  </button>
+
+  <button type="button"
+    title="Editar" slot="action"
+    class="md-standard-icon-button">
+   <span
+     class="material-symbols-outlined">
+    edit
+   </span>
+  </button>
+
+  <button is="md-overflow-button"
+    slot="action"
+    onclick="overflow.alterna(this)">
+  </button>
+
+ </md-top-app-bar>
+
+ <h1 id="h1Headline">
+  Página secundaria
+ </h1>
+
+ <main>
+  <p>
+   Esta es una página secundaria de
+   la app. Las X que siguen son
+   para que veas como se comporta
+   cuando se hace scroll.
+  </p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+  <p>x</p>
+ </main>
+
+ <md-overflow-menu id="overflow">
+
+  <button type="button">
+   <span
+     class="material-symbols-outlined">
+    star
+   </span>
+   Marcar favorito
+  </button>
+
+  <button type="button">
+   <span
+     class="material-symbols-outlined">
+    delete
+   </span>
+   Eliminar
+  </button>
+
+ </md-overflow-menu>
+
+ <nav-drw id="nav"></nav-drw>
+
+</body>
+
+</html>
