@@ -1,26 +1,29 @@
 {
- "short_name": "PWA",
- "name": "Ejemplo de PWA",
+ "short_name": "PWA con MD",
+ "name": "PWA con Material Design",
  "id": "/index.html",
  "start_url": "/index.html",
  "display": "standalone",
- "theme_color": "#cbc693",
- "background_color": "#ffffff",
- "description": "Ejemplos básico de PWA.",
+ "theme_color": "#fffbfe",
+ "background_color": "#fffbfe",
+ "display_override": [
+  "window-controls-overlay"
+ ],
+ "description": "Ejemplos de PWA con múltiples componentes de Material Design.",
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",
-   "sizes": "1507x777",
+   "sizes": "1257x646",
    "type": "image/png",
    "form_factor": "wide",
-   "label": "PWA Básica"
+   "label": "PWA con Material Design"
   },
   {
    "src": "/img/screenshot_vertical.png",
-   "sizes": "591x980",
+   "sizes": "595x644",
    "type": "image/png",
    "form_factor": "narrow",
-   "label": "PWA Básica (2)"
+   "label": "PWA con Material Design (2)"
   }
  ],
  "icons": [
@@ -40,7 +43,7 @@
    "src": "/img/maskable_icon_x96.png",
    "sizes": "96x96",
    "type": "image/png",
-   "purpose": "any"
+   "purpose": "maskable"
   },
   {
    "src": "/img/maskable_icon_x128.png",
@@ -68,7 +71,7 @@
   },
   {
    "src": "/img/maskable_icon.png",
-   "sizes": "2730x2730",
+   "sizes": "3413x3413",
    "type": "image/png",
    "purpose": "any"
   },
@@ -122,7 +125,7 @@
   },
   {
    "src": "/img/maskable_icon.png",
-   "sizes": "2730x2730",
+   "sizes": "3413x3413",
    "type": "image/png",
    "purpose": "maskable"
   }
