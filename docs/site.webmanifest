@@ -1,29 +1,26 @@
 {
- "short_name": "PWA con MD",
- "name": "PWA con Material Design",
+ "short_name": "PWA",
+ "name": "Ejemplo de PWA",
  "id": "/index.html",
  "start_url": "/index.html",
  "display": "standalone",
- "theme_color": "#fffbfe",
- "background_color": "#fffbfe",
- "display_override": [
-  "window-controls-overlay"
- ],
- "description": "Ejemplos de PWA con múltiples componentes de Material Design.",
+ "theme_color": "#cbc693",
+ "background_color": "#ffffff",
+ "description": "Ejemplos básico de PWA.",
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",
-   "sizes": "1257x646",
+   "sizes": "1507x777",
    "type": "image/png",
    "form_factor": "wide",
-   "label": "Componentes de MD"
+   "label": "PWA Básica"
   },
   {
    "src": "/img/screenshot_vertical.png",
-   "sizes": "595x644",
+   "sizes": "591x980",
    "type": "image/png",
    "form_factor": "narrow",
-   "label": "Componentes de MD (2)"
+   "label": "PWA Básica (2)"
   }
  ],
  "icons": [
@@ -43,7 +40,7 @@
    "src": "/img/maskable_icon_x96.png",
    "sizes": "96x96",
    "type": "image/png",
-   "purpose": "maskable"
+   "purpose": "any"
   },
   {
    "src": "/img/maskable_icon_x128.png",

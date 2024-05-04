@@ -4,128 +4,61 @@
 <head>
 
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <meta name="viewport" content="width=device-width">
 
- <title>PWA con MD</title>
+ <title>PWA Básica</title>
 
- <meta name="description"
-   content="Ejemplo de PWA con
-    Material Design">
+ <!-- Resumen para los motores de búsqueda. -->
+ <meta name="description" content="Ejemplo de PWA">
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
+ <meta name="theme-color" content="#cbc693">
 
- <meta
-   name="apple-mobile-web-app-title"
-   content="PWA con MD">
- <meta
-   name="apple-mobile-web-app-capable"
-   content="yes">
- <meta
-   name="apple-mobile-web-app-status-bar-style"
-   content="default">
- <link rel="apple-touch-icon"
-   href="img/maskable_icon.png">
- <link rel="apple-touch-icon"
-   sizes="48x48"
-   href="img/maskable_icon_x48.png">
- <link rel="apple-touch-icon"
-   sizes="72x72"
-   href="img/maskable_icon_x72.png">
- <link rel="apple-touch-icon"
-   sizes="96x96"
-   href="img/maskable_icon_x96.png">
- <link rel="apple-touch-icon"
-   sizes="128x128"
-   href="img/maskable_icon_x128.png">
- <link rel="apple-touch-icon"
-   sizes="192x192"
-   href="img/maskable_icon_x192.png">
- <link rel="apple-touch-icon"
-   sizes="384x384"
-   href="img/maskable_icon_x384.png">
- <link rel="apple-touch-icon"
-   sizes="512x512"
-   href="img/maskable_icon_x512.png">
+ <!-- Ícono para la página web, que normalmente se pone en la raíz del sitio.
+  Puede ser diferente para cada página. -->
+ <link rel="icon" sizes="32x32" href="favicon.ico">
 
- <!-- Configuración de todas las
-   páginas y colores con CSS. -->
- <link rel="stylesheet"
-   href="css/estilos.css">
+ <!-- Configuración de la PWA para Chrome y Edge. Debe ponerse en todas las
+  páginas. -->
+ <link rel="manifest" href="site.webmanifest">
 
- <!-- Para manejar customized
-   built-in elements en Safari -->
- <script
-   src="ungap/custom-elements.js">
-   </script>
+ <!-- Configuración para Web Clip en Safari (iOS). Solo se pone en la
+  página principal. -->
 
- <!-- Configuración de todas las
-   páginas con JavaSript. -->
- <script type="module"
-   src="js/configura.js"></script>
+ <!-- Indica que este sitio se puede instalar en iOS para usarse sin abrir el
+  navegador. -->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+
+ <!-- Título en la página de aplicaciones de iOS. Debe ser un texto corto de
+  maximo 20 caracteres. Pede llevar espacio, lo que ayuda a distribuír el
+  texto. Debe coincidir con el short_name del archivo "site.webmanifest", -->
+ <meta name="apple-mobile-web-app-title" content="PWA">
+
+ <!-- Indica que la barra de estado cuando no se abre la app, debe ser como
+  las demás app. -->
+ <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+ <!-- Íconos de la app en distintas resoluciones-->
+ <link rel="apple-touch-icon" href="img/maskable_icon.png">
+ <link rel="apple-touch-icon" sizes="48x48" href="img/maskable_icon_x48.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="img/maskable_icon_x72.png">
+ <link rel="apple-touch-icon" sizes="96x96" href="img/maskable_icon_x96.png">
+ <link rel="apple-touch-icon" sizes="128x128" href="img/maskable_icon_x128.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="img/maskable_icon_x192.png">
+ <link rel="apple-touch-icon" sizes="384x384" href="img/maskable_icon_x384.png">
+ <link rel="apple-touch-icon" sizes="512x512" href="img/maskable_icon_x512.png">
+
+ <link rel="stylesheet" href="css/estilos.css">
+
+ <script type="module" src="js/configura.js"></script>
 
 </head>
 
 <body>
 
- <md-top-app-bar
-   class="center-aligned">
+ <h1>PWA Básica</h1>
 
-  <h1>PWA con MD</h1>
-
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
-
-  <button type="button"
-    title="Perfil" slot="action"
-    class="md-standard-icon-button avatar">
-   <span
-     class="material-symbols-outlined">
-    account_circle
-   </span>
-  </button>
-
- </md-top-app-bar>
-
- <main>
-  <p>
-   Esta es la página principal de
-   la app. Las X que siguen son
-   para que veas como se comporta
-   cuando se hace scroll.
-  </p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
- </main>
-
- <nav-drw id="nav"></nav-drw>
+ <p>Hola mundo.</p>
 
 </body>
 
