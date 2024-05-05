@@ -15,7 +15,7 @@
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "1.17"
+const VERSION = "1.00"
 
 /**
  * Nombre de la carpeta de caché.
@@ -106,9 +106,7 @@ const ARCHIVOS = [
  "lib/js/abreElementoHtml.js",
  "lib/js/calculaClase.js",
  "lib/js/cierraElementoHtmo.js",
- "lib/js/ejecutaMetodo.js",
  "lib/js/getAttribute.js",
- "lib/js/html.js",
  "lib/js/htmlentities.js",
  "lib/js/muestraError.js",
  "lib/js/muestraTextoDeAyuda.js",
@@ -116,7 +114,6 @@ const ARCHIVOS = [
  "lib/js/querySelector.js",
  "lib/js/querySelectorAll.js",
  "lib/js/registraServiceWorkerSiEsSoportado.js",
- "lib/js/setBooleanAttribute.js",
  "lib/js/const/ES_APPLE.js",
  "lib/js/custom/md-filled-text-field.js",
  "lib/js/custom/md-menu-button.js",

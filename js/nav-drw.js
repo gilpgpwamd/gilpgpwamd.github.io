@@ -1,6 +1,5 @@
 import { calculaClase } from "../lib/js/calculaClase.js"
 import { MdNavigationDrawer } from "../lib/js/custom/MdNavigationDrawer.js"
-import { html } from "../lib/js/html.js"
 
 export class NavDrw extends MdNavigationDrawer {
 
@@ -8,7 +7,7 @@ export class NavDrw extends MdNavigationDrawer {
   * @override
   */
  getHipervinculos() {
-  return html`
+  return /* HTML */`
    <h1>PWA con MD</h1>
 
    <a ${calculaClase(["/index.html", "", "/"])} href="index.html">

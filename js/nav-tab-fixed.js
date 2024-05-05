@@ -1,12 +1,11 @@
 import { calculaClase } from "../lib/js/calculaClase.js"
-import { html } from "../lib/js/html.js"
 
 export class NavTabFixed extends HTMLElement {
 
  connectedCallback() {
   this.classList.add("md-tab", "fixed")
 
-  this.innerHTML = html`
+  this.innerHTML = /* HTML */`
    <a ${calculaClase(["/index.html", "", "/"])} href="index.html">
     <span class="material-symbols-outlined">home</span>
     Inicio
@@ -25,7 +24,7 @@ export class NavTabFixed extends HTMLElement {
    <a ${calculaClase(["/navbar.html"])} href="navbar.html">
     <span class="material-symbols-outlined">bottom_navigation</span>
     Barra de navegación
-   </a>`.htmlTxt
+   </a>`
  }
 
 }
