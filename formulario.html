@@ -44,14 +44,12 @@
 
   <main>
 
-   <md-filled-text-field
-     id="campoGenero">
+   <md-filled-text-field id="campoGenero">
     <span id="etiquetaGenero"
       accesskey="G">
      Género*
     </span>
-    <md-select-menu
-      id="selectGenero"
+    <md-select-menu id="selectGenero"
       slot="input-text" required
       aria-labelledby="etiquetaGenero"
       options="opcionesDeGenero"
@@ -64,8 +62,7 @@
    </md-filled-text-field>
 
    <p>
-    <button
-      class="md-filled-button"
+    <button class="md-filled-button"
       style="width: 100%;">
      Recomendar
     </button>
@@ -73,9 +70,7 @@
 
   </main>
 
-  <md-options-menu
-    id="opcionesDeGenero"
-    name="genero"
+  <md-options-menu id="opcionesDeGenero"
     aria-label="Opciones de género">
 
    <label>
@@ -128,7 +123,7 @@
     if (
      selectGenero.validity.valid) {
      const genero =
-     selectGenero.value
+      selectGenero.value
      const resultado =
       recomienda(genero)
      alert(resultado)

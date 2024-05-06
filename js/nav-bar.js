@@ -1,4 +1,4 @@
-import { calculaClase } from "../lib/js/calculaClase.js"
+import { resaltaSiEstasEn } from "../lib/js/resaltaSiEstasEn.js"
 
 export class NavBar extends HTMLElement {
 
@@ -6,22 +6,22 @@ export class NavBar extends HTMLElement {
   this.classList.add("md-navigation-bar")
 
   this.innerHTML = /* HTML */`
-   <a ${calculaClase(["/index.html", "", "/"])} href="index.html">
+   <a ${resaltaSiEstasEn(["/index.html", "", "/"])} href="index.html">
     <span class="material-symbols-outlined">home</span>
     Inicio
    </a>
 
-   <a ${calculaClase(["/navTabFixed.html"])} href="navTabFixed.html">
+   <a ${resaltaSiEstasEn(["/navTabFixed.html"])} href="navTabFixed.html">
     <span class="material-symbols-outlined">tabs</span>
     Pestañas
    </a>
 
-   <a ${calculaClase(["/navbar.html"])} href="navbar.html">
+   <a ${resaltaSiEstasEn(["/navbar.html"])} href="navbar.html">
     <span class="material-symbols-outlined">bottom_navigation</span>
     Barra
    </a>
 
-   <a ${calculaClase(["/formulario.html"])} href="formulario.html">
+   <a ${resaltaSiEstasEn(["/formulario.html"])} href="formulario.html">
     <span class="material-symbols-outlined">newspaper</span>
     Forma
    </a>`

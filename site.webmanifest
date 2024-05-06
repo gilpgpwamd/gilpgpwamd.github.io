@@ -9,7 +9,7 @@
  "display_override": [
   "window-controls-overlay"
  ],
- "description": "Ejemplos de PWA con múltiples componentes de Material Design.",
+ "description": "PWA con componentes de Material Design.",
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",

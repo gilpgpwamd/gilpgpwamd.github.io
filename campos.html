@@ -40,9 +40,7 @@
 
  </md-top-app-bar>
 
- <h1 id="headline">
-  Campos de texto
- </h1>
+ <h1 id="headline">Campos de texto</h1>
 
  <main>
 
@@ -58,23 +56,22 @@
    <label for="nombre">
     Nombre*
    </label>
-   <input id="nombre"
-     slot="input-text" required>
+   <input id="nombre" required
+     slot="input-text">
    <small slot="supporting">
     *Requerido
    </small>
   </md-filled-text-field>
 
   <md-filled-text-field>
-   <label for="email"
-     accesskey="M">
+   <label for="email" accesskey="M">
     Email
    </label>
-   <input id="email"
-     slot="input-text" type="email"
+   <input id="email" type="email"
+     slot="input-text"
      oninput="
-     campoDireccion.value =
-      this.value">
+      campoDireccion.value =
+       this.value">
   </md-filled-text-field>
 
   <!-- Usa class="float" cuando
@@ -84,8 +81,8 @@
    <label for="fecha">
     Fecha
    </label>
-   <input id="fecha"
-     slot="input-text" type="date">
+   <input id="fecha" type="date"
+     slot="input-text">
   </md-filled-text-field>
 
   <md-filled-text-field
@@ -93,8 +90,7 @@
    <label for="direccion">
     Dirección
    </label>
-   <textarea id="direccion"
-     rows="3"
+   <textarea id="direccion" rows="3"
      slot="input-text"></textarea>
   </md-filled-text-field>
 

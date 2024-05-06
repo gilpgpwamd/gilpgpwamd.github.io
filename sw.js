@@ -15,7 +15,7 @@
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "1.18"
+const VERSION = "1.00"
 
 /**
  * Nombre de la carpeta de caché.
@@ -23,7 +23,8 @@ const VERSION = "1.18"
 const CACHE = "pwamd"
 
 /**
- * Archivos requeridos para que la aplicación funcione fuera de línea.
+ * Archivos requeridos para que la aplicación funcione fuera de
+ * línea.
  */
 const ARCHIVOS = [
  "ayuda.html",
@@ -104,7 +105,6 @@ const ARCHIVOS = [
  "lib/fonts/roboto-v30-latin-regular.ttf",
  "lib/fonts/roboto-v30-latin-regular.woff2",
  "lib/js/abreElementoHtml.js",
- "lib/js/calculaClase.js",
  "lib/js/cierraElementoHtmo.js",
  "lib/js/getAttribute.js",
  "lib/js/htmlentities.js",
@@ -114,6 +114,7 @@ const ARCHIVOS = [
  "lib/js/querySelector.js",
  "lib/js/querySelectorAll.js",
  "lib/js/registraServiceWorkerSiEsSoportado.js",
+ "lib/js/resaltaSiEstasEn.js",
  "lib/js/const/ES_APPLE.js",
  "lib/js/custom/md-filled-text-field.js",
  "lib/js/custom/md-menu-button.js",
