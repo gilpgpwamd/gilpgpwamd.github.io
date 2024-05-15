@@ -15,7 +15,7 @@
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "1.20"
+const VERSION = "1.00"
 
 /**
  * Nombre de la carpeta de caché.
@@ -81,6 +81,7 @@ const ARCHIVOS = [
  "lib/css/md-cards.css",
  "lib/css/md-fab-primary.css",
  "lib/css/md-filled-button.css",
+ "lib/css/md-filled-text-field.css",
  "lib/css/md-list.css",
  "lib/css/md-menu.css",
  "lib/css/md-navigation-bar.css",
@@ -116,7 +117,6 @@ const ARCHIVOS = [
  "lib/js/registraServiceWorkerSiEsSoportado.js",
  "lib/js/resaltaSiEstasEn.js",
  "lib/js/const/ES_APPLE.js",
- "lib/js/custom/md-filled-text-field.js",
  "lib/js/custom/md-menu-button.js",
  "lib/js/custom/md-options-menu.js",
  "lib/js/custom/md-overflow-button.js",

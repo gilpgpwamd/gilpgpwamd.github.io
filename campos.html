@@ -44,55 +44,44 @@
 
  <main>
 
-  <md-filled-text-field value="Saludo">
-   <label for="saludo">
-    Saludo
-   </label>
-   <output id="saludo"
-     slot="input-text"></output>
-  </md-filled-text-field>
-
-  <md-filled-text-field>
-   <label for="nombre">
-    Nombre*
-   </label>
-   <input id="nombre" required
-     slot="input-text">
-   <small slot="supporting">
-    *Requerido
-   </small>
-  </md-filled-text-field>
-
-  <md-filled-text-field>
-   <label for="email" accesskey="M">
-    Email
-   </label>
-   <input id="email" type="email"
-     slot="input-text"
-     oninput="
-      campoDireccion.value =
-       this.value">
-  </md-filled-text-field>
 
   <!-- Usa class="float" cuando
    quieras que la etiqueta esté
    arriba todo el tiempo. -->
-  <md-filled-text-field class="float">
-   <label for="fecha">
-    Fecha
-   </label>
-   <input id="fecha" type="date"
-     slot="input-text">
-  </md-filled-text-field>
+  <p class="md-filled-text-field float">
+   <label for="saludo">Saludo</label>
+   <output id="saludo">Saludo</output>
+  </p>
 
-  <md-filled-text-field
-    id="campoDireccion">
+  <p class="md-filled-text-field">
+   <input id="nombre" required
+     placeholder="Nombre*">
+   <label for="nombre">Nombre*</label>
+   <small>*Requerido</small>
+  </p>
+
+  <p class="md-filled-text-field">
+   <input id="email" type="email"
+     placeholder="Email">
+   <label for="email" accesskey="M">
+    Email
+   </label>
+  </p>
+
+  <p class="md-filled-text-field float">
+   <input id="fecha" type="date"
+     placeholder="Fecha">
+   <label for="fecha">Fecha</label>
+  </p>
+
+  <p class="md-filled-text-field">
+   <textarea id="direccion"
+     placeholder="Dirección"
+     rows="3"></textarea>
    <label for="direccion">
     Dirección
    </label>
-   <textarea id="direccion" rows="3"
-     slot="input-text"></textarea>
-  </md-filled-text-field>
+  </p>
 
  </main>
 

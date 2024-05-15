@@ -44,22 +44,21 @@
 
   <main>
 
-   <md-filled-text-field id="campoGenero">
-    <span id="etiquetaGenero"
-      accesskey="G">
-     Género*
-    </span>
+   <p class="md-filled-text-field">
     <md-select-menu id="selectGenero"
-      slot="input-text" required
+      required
       aria-labelledby="etiquetaGenero"
       options="opcionesDeGenero"
       oninput="copiaMensajes()">
     </md-select-menu>
-    <small id="supportingGenero"
-      slot="supporting">
+    <span id="etiquetaGenero"
+      accesskey="G">
+     Género*
+    </span>
+    <small id="supportingGenero">
      * Obligatorio
     </small>
-   </md-filled-text-field>
+   </p>
 
    <p>
     <button class="md-filled-button"

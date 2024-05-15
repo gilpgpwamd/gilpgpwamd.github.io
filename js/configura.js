@@ -4,7 +4,6 @@ import "./nav-tab-scrollable.js"
 import "./nav-tab-fixed.js"
 import "./nav-bar.js"
 /** Elementos utilizados */
-import "../lib/js/custom/md-filled-text-field.js"
 import "../lib/js/custom/md-menu-button.js"
 import "../lib/js/custom/md-options-menu.js"
 import "../lib/js/custom/md-overflow-button.js"

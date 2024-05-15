@@ -41,22 +41,19 @@
 
  <main>
 
-  <md-filled-text-field
-    id="campoGrupo"
-    class="nopadding" value="IC22">
+  <p class="md-filled-text-field">
+   <md-select-menu id="selectGrupo"
+     required
+     aria-labelledby="etiquetaGrupo"
+     options="opcionesDeGrupo"
+     value="IC21">
+   </md-select-menu>
    <span id="etiquetaGrupo"
      accesskey="G">
     Grupo*
    </span>
-   <md-select-menu id="selectGrupo"
-     slot="input-text" required
-     aria-labelledby="etiquetaGrupo"
-     options="opcionesDeGrupo">
-   </md-select-menu>
-   <small slot="supporting">
-    *Requerido
-   </small>
-  </md-filled-text-field>
+   <small>*Requerido</small>
+  </p>
 
  </main>
 
