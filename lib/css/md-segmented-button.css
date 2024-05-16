@@ -13,8 +13,8 @@
 }
 
 .md-segmented-button input {
- appearance: none;
  -webkit-appearance: none;
+ appearance: none;
  flex: 0 1 1px;
  width: 1px;
  height: 38px;

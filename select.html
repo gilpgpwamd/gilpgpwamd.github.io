@@ -29,65 +29,68 @@
 
 <body>
 
- <md-top-app-bar>
+ <form>
 
-  <h1>Select</h1>
+  <md-top-app-bar>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+   <h1>Select</h1>
 
- </md-top-app-bar>
+   <button is="md-menu-button"
+     slot="navigation"
+     onclick="nav.abre()"></button>
 
- <main>
+  </md-top-app-bar>
 
-  <p class="md-filled-text-field">
-   <md-select-menu id="selectGrupo"
-     required
-     aria-labelledby="etiquetaGrupo"
-     options="opcionesDeGrupo"
-     value="IC21">
-   </md-select-menu>
-   <span id="etiquetaGrupo"
-     accesskey="G">
-    Grupo*
-   </span>
-   <small>*Requerido</small>
-  </p>
+  <main>
 
- </main>
+   <p class="md-filled-text-field">
+    <md-select-menu name="grupo"
+      required
+      aria-labelledby="etiquetaGrupo"
+      options="opcionesDeGrupo"
+      value="IC21">
+    </md-select-menu>
+    <span id="etiquetaGrupo"
+      accesskey="G">
+     Grupo*
+    </span>
+    <small>*Requerido</small>
+   </p>
 
- <md-options-menu
-   id="opcionesDeGrupo"
-   aria-label="Opciones de grupo">
+   <p>
+    <button class="md-filled-button"
+      style="width: 100%;">
+     Enviar
+    </button>
+   </p>
 
-  <label>
-   <input type="radio"
-     name="grupo" value=""
+  </main>
+
+  <md-options-menu
+    id="opcionesDeGrupo"
+    aria-label="Opciones de grupo">
+
+   <span data-value=""
      title="Selecciona opción">
-  </label>
+   </span>
 
-  <label>
-   <input type="radio"
-     name="grupo" value="IC21">
-   IC-21
-  </label>
+   <span data-value="IC21">
+    IC-21
+   </span>
 
-  <label>
-   <input type="radio"
-     name="grupo" value="IC22">
-   IC-22
-  </label>
+   <span data-value="IC22">
+    IC-22
+   </span>
 
-  <label>
-   <input type="radio"
-     name="grupo" value="IC23">
-   IC-23
-  </label>
+   <span data-value="IC23">
+    IC-23
+   </span>
 
- </md-options-menu>
+  </md-options-menu>
 
- <nav-drw id="nav"></nav-drw>
+  <nav-drw id="nav"></nav-drw>
+
+ </form>
 
 </body>
 

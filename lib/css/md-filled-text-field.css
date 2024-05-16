@@ -60,10 +60,9 @@
 }
 
 .md-filled-text-field :not(:placeholder-shown)+label,
+.md-filled-text-field .populated+span,
 .md-filled-text-field:focus-within span,
 .md-filled-text-field:focus-within label,
-.md-filled-text-field .populated+span,
-.md-filled-text-field .populated+label,
 .md-filled-text-field.float span,
 .md-filled-text-field.float label {
  transform: translateY(0);

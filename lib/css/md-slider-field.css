@@ -36,8 +36,8 @@ md-slider-field.material::-moz-range-track {
 }
 
 md-slider-field input::-moz-range-thumb {
- appearance: none;
  -webkit-appearance: none;
+ appearance: none;
  background-color: var(--md-sys-color-primary);
  width: 20px;
  height: 20px;
