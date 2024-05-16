@@ -162,34 +162,27 @@
  color: var(--md-sys-color-on-surface-variant);
 }
 
-.md-filled-text-field .invalid,
 .md-filled-text-field :invalid {
  color: var(--md-sys-color-on-surface);
  border-bottom-color: var(--md-sys-color-error);
 }
 
-.md-filled-text-field .invalid+span,
-.md-filled-text-field .invalid+label,
 .md-filled-text-field :invalid+span,
 .md-filled-text-field :invalid+label {
  color: var(--md-sys-color-error);
 }
 
-.md-filled-text-field .invalid~small,
-.md-filled-text-field:hover .invalid~small,
-.md-filled-text-field:focus-within .invalid~small,
 .md-filled-text-field :invalid~small,
 .md-filled-text-field:hover :invalid~small,
 .md-filled-text-field:focus-within .input-text:invalid~small {
  color: var(--md-sys-color-error);
 }
 
-.md-filled-text-field .invalid:focus,
 .md-filled-text-field :invalid:focus {
  caret-color: var(--md-sys-color-error);
  border-bottom-color: var(--md-sys-color-on-error-container) !important;
 }
 
-.md-filled-text-field:hover .input-text.invalid {
+.md-filled-text-field:hover :invalid {
  color: var(--md-sys-color-on-surface);
 }
