@@ -3,7 +3,7 @@
  z-index: 2;
  box-sizing: border-box;
  cursor: default;
- padding: 4px 0;
+ padding: 0.25rem 0;
  border-radius:
   var(--md-sys-shape-corner-extra-small-default-size);
  background-color: var(--md-sys-color-surface-container-low);
@@ -42,9 +42,9 @@
  position: relative;
  display: block;
  box-sizing: border-box;
- height: 48px;
- line-height: 48px;
- padding: 0 12px;
+ height: 3rem;
+ line-height: 3rem;
+ padding: 0 0.75rem;
  color: var(--md-sys-color-on-surface);
  font-family: var(--md-sys-typescale-label-large-font);
  font-weight: var(--md-sys-typescale-label-large-weight);
@@ -77,12 +77,12 @@
 /* icon */
 .md-menu>* span {
  position: relative;
- margin-right: 12px;
+ margin-right: 0.75rem;
  vertical-align: middle;
  color: var(--md-sys-color-on-surface-variant);
- font-size: 24px;
- width: 24px;
- height: 24px;
+ font-size: 1.5rem;
+ width: 1.5rem;
+ height: 1.5rem;
 }
 
 /* icon */

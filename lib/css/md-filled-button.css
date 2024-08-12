@@ -26,10 +26,10 @@
 .md-filled-button {
  position: relative;
  box-sizing: border-box;
- border-radius: 20px;
- height: 40px;
- line-height: 40px;
- padding: 0 24px;
+ border-radius: 1.25rem;
+ height: 2.5rem;
+ line-height: 2.5rem;
+ padding: 0 1.5rem;
  border: none;
  background-color: transparent;
  box-shadow: var(--md-box_shadow_level0);

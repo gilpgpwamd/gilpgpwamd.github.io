@@ -2,7 +2,7 @@
  position: relative;
  display: inline-block;
  border: none;
- padding: 4px;
+ padding: 0.25rem;
  background-color: transparent;
  text-decoration: none;
  border-radius: 50%;
@@ -17,27 +17,27 @@
 .md-standard-icon-button::after {
  content: "";
  position: absolute;
- top: 4px;
- right: 4px;
- left: 4px;
- bottom: 4px;
+ top: 0.25rem;
+ right: 0.25rem;
+ left: 0.25rem;
+ bottom: 0.25rem;
  border-radius: 50%;
 }
 
 .md-standard-icon-button span {
  position: relative;
- padding: 8px;
+ padding: 0.5rem;
  color: var(--md-sys-color-on-surface-variant);
- font-size: 24px;
- width: 24px;
- height: 24px;
+ font-size: 1.5rem;
+ width: 1.5rem;
+ height: 1.5rem;
 }
 
 .md-standard-icon-button.avatar span {
- padding: 5px;
- font-size: 30px;
- width: 30px;
- height: 30px;
+ padding: 0.3125rem;
+ font-size: 1.875rem;
+ width: 1.875rem;
+ height: 1.875rem;
 }
 
 .md-standard-icon-button:hover::after {

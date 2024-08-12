@@ -12,8 +12,8 @@
 }
 
 .md-tab.scrollable {
- padding-left: 32px;
- gap: 16px;
+ padding-left: 2rem;
+ gap: 1rem;
 }
 
 .md-tab.scroll {
@@ -37,7 +37,7 @@
  text-decoration: var(--md-sys-typescale-title-small-text-decoration);
  text-align: center;
  box-sizing: border-box;
- border-bottom: 3px solid var(--md-sys-color-surface);
+ border-bottom: 0.1875rem solid var(--md-sys-color-surface);
 }
 
 .md-tab.fixed a {

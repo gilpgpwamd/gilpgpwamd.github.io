@@ -2,8 +2,8 @@
  position: relative;
  display: inline-block;
  border: none;
- width: 56px;
- height: 56px;
+ width: 3.5rem;
+ height: 3.5rem;
  border-radius: var(--md-sys-shape-corner-large-default-size);
  overflow: hidden;
  padding: 0;

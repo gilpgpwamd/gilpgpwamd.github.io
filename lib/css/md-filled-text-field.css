@@ -1,11 +1,11 @@
 .md-filled-text-field {
  position: relative;
- margin: 16px;
+ margin: 1rem;
  overflow: hidden;
  display: flex;
  flex-direction: column;
  align-items: stretch;
- padding-top: calc(8px + var(--md-sys-typescale-body-small-line-height));
+ padding-top: calc(0.5rem + var(--md-sys-typescale-body-small-line-height));
  border-top-left-radius: var(--md-sys-shape-corner-extra-small-top-top-left);
  border-top-right-radius: var(--md-sys-shape-corner-extra-small-top-top-right);
  overflow: hidden;
@@ -38,11 +38,11 @@
 .md-filled-text-field span,
 .md-filled-text-field label {
  position: absolute;
- top: 8px;
- left: 16px;
- right: 16px;
+ top: 0.5rem;
+ left: 1rem;
+ right: 1rem;
  display: block;
- transform: translateY(16px);
+ transform: translateY(1rem);
  transition-property: transform;
  transition-duration: var(--md-sys-motion-duration-300);
  white-space: nowrap;
@@ -79,11 +79,11 @@
 .md-filled-text-field :not(label, span, small) {
  position: relative;
  caret-color: var(--md-sys-color-primary);
- min-height: 32px;
+ min-height: 2rem;
  box-sizing: border-box;
- padding-left: 16px;
- padding-bottom: 8px;
- padding-right: 16px;
+ padding-left: 1rem;
+ padding-bottom: 0.5rem;
+ padding-right: 1rem;
  border: none;
  resize: none;
  color: var(--md-sys-color-on-surface);
@@ -97,7 +97,7 @@
  text-decoration: var(--md-sys-typescale-body-large-text-decoration);
  background-color: transparent;
  outline: none;
- border-bottom-width: 1px;
+ border-bottom-width: 0.0625rem;
  border-bottom-style: solid;
  border-bottom-color: var(--md-sys-color-on-surface-variant);
 }
@@ -118,7 +118,7 @@
  line-height: var(--md-sys-typescale-body-small-line-height);
  text-transform: var(--md-sys-typescale-body-small-text-transform);
  text-decoration: var(--md-sys-typescale-body-small-text-decoration);
- padding: 4px 16px 0 16px;
+ padding: 0.25rem 1rem 0 1rem;
  white-space: nowrap;
  text-overflow: ellipsis;
  overflow: hidden;
@@ -130,8 +130,8 @@
 }
 
 .md-filled-text-field:hover :not(label, span, small) {
- padding-bottom: 8px;
- border-bottom-width: 1px;
+ padding-bottom: 0.5rem;
+ border-bottom-width: 0.0625rem;
  border-bottom-color: var(--md-sys-color-on-surface);
 }
 
@@ -152,9 +152,14 @@
 .md-filled-text-field :focus {
  color: var(--md-sys-color-on-surface);
  outline: none;
- padding-bottom: 7px;
- border-bottom-width: 2px;
+ padding-bottom: 0.4375rem;
+ border-bottom-width: 0.125rem;
  border-bottom-color: var(--md-sys-color-primary);
+}
+
+.md-filled-text-field:hover :focus {
+ padding-bottom: 0.4375rem;
+ border-bottom-width: 0.125rem;
 }
 
 .md-filled-text-field:focus-within small {
@@ -179,9 +184,10 @@
 
 .md-filled-text-field :invalid:focus {
  caret-color: var(--md-sys-color-error);
- border-bottom-color: var(--md-sys-color-on-error-container) !important;
+ border-bottom-color: var(--md-sys-color-error);
 }
 
 .md-filled-text-field:hover :invalid {
  color: var(--md-sys-color-on-surface);
+ border-bottom-color: var(--md-sys-color-error);
 }

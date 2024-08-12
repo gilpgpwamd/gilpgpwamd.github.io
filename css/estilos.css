@@ -29,8 +29,8 @@
 @import url(../lib/css/md-navigation-bar.css);
 
 html {
-  --tabWidth: 60px;
-  --anchoNav: 360px;
+  --tabWidth: 3.75rem;
+  --anchoNav: 22.5rem;
 }
 
 main {
@@ -68,8 +68,8 @@ body.fouc {
 }
 
 html {
-  --Font: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  font-size: 16px;
+  --Font: -apple-system, BlinkMacSystemFont, roboto, sans-serif;
+  font-size: 1rem;
   --colIntIos: white;
   --colIntIosOnBk: #2acc2a;
   --colIntIosOnBkFc: #1bbb1b;
@@ -86,13 +86,13 @@ html {
   --md-box_shadow_level1:
     0 var(--md-sys-elevation-level1) var(--md-sys-elevation-level1) var(--md-sys-color-shadow);
   --md-box_shadow_level0: none;
-  --iconSize: 24px;
-  --avatarSize: 40px;
-  --imageSize: 56px;
-  --videoWidth: 114px;
-  --videoHeight: 64px;
-  --md-sys-state-focus-indicator-outer-offset: 2px;
-  --md-sys-state-focus-indicator-thickness: 3px;
+  --iconSize: 1.5rem;
+  --avatarSize: 2.5rem;
+  --imageSize: 3.5rem;
+  --videoWidth: 7.125rem;
+  --videoHeight: 4rem;
+  --md-sys-state-focus-indicator-outer-offset: 0.125rem;
+  --md-sys-state-focus-indicator-thickness: 0.1875rem;
   /* Pressed state layer opacity */
   --state-pressed-transparency-percentage: 84%;
   /* Focus state layer opacity */
@@ -132,7 +132,7 @@ html {
 }
 
 p {
-  margin: 16px;
+  margin: 1rem;
 }
 
 a {

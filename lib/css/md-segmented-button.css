@@ -2,9 +2,9 @@
  display: flex;
  align-items: stretch;
  box-sizing: border-box;
- border: 1px solid var(--md-sys-color-outline);
- height: 40px;
- border-radius: 20px;
+ border: 0.0625rem solid var(--md-sys-color-outline);
+ height: 2.5rem;
+ border-radius: 1.25rem;
  overflow: hidden;
 }
 
@@ -15,9 +15,9 @@
 .md-segmented-button input {
  -webkit-appearance: none;
  appearance: none;
- flex: 0 1 1px;
- width: 1px;
- height: 38px;
+ flex: 0 1 0.0625rem;
+ width: 0.0625rem;
+ height: 2.375rem;
  margin: 0;
  padding: 0;
  background-color: var(--md-sys-color-outline);
@@ -37,11 +37,11 @@
 
 .md-segmented-button label {
  position: relative;
- flex: 1 1 24px;
+ flex: 1 1 1.5rem;
  display: block;
  box-sizing: border-box;
- height: 38px;
- line-height: 38px;
+ height: 2.375rem;
+ line-height: 2.375rem;
  text-align: center;
  color: var(--md-sys-color-on-surface);
  font-family: var(--md-sys-typescale-label-large-font);
@@ -51,7 +51,7 @@
  letter-spacing: var(--md-sys-typescale-label-large-tracking);
  text-transform: var(--md-sys-typescale-label-large-text-transform);
  text-decoration: var(--md-sys-typescale-label-large-text-decoration);
- padding: 0 12px;
+ padding: 0 0.75rem;
  overflow: hidden;
  white-space: nowrap;
  text-overflow: ellipsis;
@@ -89,10 +89,10 @@
 .md-segmented-button label span {
  vertical-align: middle;
  color: var(--md-sys-color-on-surface);
- font-size: 18px;
- width: 18px;
- height: 18px;
- margin-right: 8px;
+ font-size: 1.125rem;
+ width: 1.125rem;
+ height: 1.125rem;
+ margin-right: 0.5rem;
 }
 
 

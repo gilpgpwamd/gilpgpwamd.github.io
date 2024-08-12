@@ -103,8 +103,7 @@ const ARCHIVOS = [
  "lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].codepoints",
  "lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf",
  "lib/fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].woff2",
- "lib/fonts/roboto-v30-latin-regular.ttf",
- "lib/fonts/roboto-v30-latin-regular.woff2",
+ "lib/fonts/roboto-v32-latin-regular.woff2",
  "lib/js/abreElementoHtml.js",
  "lib/js/cierraElementoHtmo.js",
  "lib/js/getAttribute.js",
@@ -113,7 +112,6 @@ const ARCHIVOS = [
  "lib/js/muestraTextoDeAyuda.js",
  "lib/js/ProblemDetails.js",
  "lib/js/querySelector.js",
- "lib/js/querySelectorAll.js",
  "lib/js/registraServiceWorkerSiEsSoportado.js",
  "lib/js/resaltaSiEstasEn.js",
  "lib/js/const/ES_APPLE.js",
@@ -151,7 +149,7 @@ if (self instanceof ServiceWorkerGlobalScope) {
 }
 
 async function llenaElCache() {
- console.log("Intentando cargar caché:", CACHE, ".")
+ console.log("Intentando cargar caché:", CACHE)
  // Borra todos los cachés.
  const keys = await caches.keys()
  for (const key of keys) {
@@ -161,8 +159,8 @@ async function llenaElCache() {
  const cache = await caches.open(CACHE)
  // Carga el listado de ARCHIVOS.
  await cache.addAll(ARCHIVOS)
- console.log("Cache cargado:", CACHE, ".")
- console.log("Versión:", VERSION, ".")
+ console.log("Cache cargado:", CACHE)
+ console.log("Versión:", VERSION)
 }
 
 /** @param {FetchEvent} evt */
