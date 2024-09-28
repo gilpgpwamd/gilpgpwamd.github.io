@@ -13,6 +13,7 @@ Generar el listado de archivos del sw.js desde Visual Studio Code.
     * el encabezado,
     * todas las carpetas,
     * el archivo .vscode/settings.json,
+    * el archivo .htaccess,
     * el archivo archivos.txt,
     * este archivo (instruccionesListadoSw.txt),
     * el archivo jsconfig.json,

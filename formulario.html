@@ -2,109 +2,72 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Formulario - PWA con MD</title>
 
- <title>
-  Formulario - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
- <link rel="stylesheet"
-   href="css/estilos.css">
- <script
-   src="ungap/custom-elements.js">
-   </script>
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
 <body>
 
- <form id="form" novalidate
-   onsubmit="procesa(event)">
+ <form id="form" novalidate onsubmit="procesa(event)">
 
   <md-top-app-bar>
 
    <h1>Formulario</h1>
 
-   <button is="md-menu-button"
-     slot="navigation"
-     onclick="nav.abre()"></button>
+   <button is="md-menu-button" slot="navigation"></button>
 
   </md-top-app-bar>
 
   <main>
 
-   <p class="md-filled-text-field">
-    <md-select-menu id="selectGenero"
-      required
-      aria-labelledby="etiquetaGenero"
-      options="opcionesDeGenero"
-      oninput="copiaMensajes()">
-    </md-select-menu>
-    <span id="etiquetaGenero"
-      accesskey="G">
-     Género*
+   <p>
+    <span class="md-filled-text-field" accesskey="G">
+     <md-select-menu id="selectGenero" required options="opcionesDeGenero"
+       oninput="copiaMensajes()"></md-select-menu>
+     <span>Género *</span>
+     <small id="supportingGenero">Obligatorio</small>
     </span>
-    <small id="supportingGenero">
-     * Obligatorio
-    </small>
    </p>
 
    <p>
-    <button class="md-filled-button"
-      style="width: 100%;">
-     Recomendar
-    </button>
+    <button class="md-filled-button" style="width: 100%;">Recomendar</button>
    </p>
 
   </main>
 
-  <md-options-menu id="opcionesDeGenero"
-    aria-label="Opciones de género">
-
-   <span data-value=""
-     title="Selecciona género">
-   </span>
-
-   <span data-value="pop">
-    Pop
-   </span>
-
-   <span data-value="reg">
-    Reguetón
-   </span>
-
+  <md-options-menu id="opcionesDeGenero" aria-label="Opciones de género">
+   <span data-value="" title="Selecciona género"></span>
+   <span data-value="pop">Pop</span>
+   <span data-value="reg">Reguetón</span>
   </md-options-menu>
 
-  <nav-drw id="nav"></nav-drw>
+  <nav-drw></nav-drw>
 
  </form>
 
  <script type="module">
-  import {
-   muestraError
-  } from "./lib/js/muestraError.js"
-  import {
-   muestraTextoDeAyuda
-  } from "./lib/js/muestraTextoDeAyuda.js"
+  import { muestraTextoDeAyuda } from "./lib/js/muestraTextoDeAyuda.js"
+  import { exportaAHtml } from "./lib/js/exportaAHtml.js"
+  import { muestraError } from "./lib/js/muestraError.js"
 
   function copiaMensajes() {
-   muestraTextoDeAyuda(
-    selectGenero, supportingGenero,
-    "* Obligatorio")
+   muestraTextoDeAyuda(selectGenero, supportingGenero, "Obligatorio")
   }
-  window["copiaMensajes"] =
-   copiaMensajes
+  exportaAHtml(copiaMensajes)
 
   /**
    * @param {SubmitEvent} evt
@@ -115,26 +78,22 @@
     copiaMensajes()
     if (
      selectGenero.validity.valid) {
-     const genero =
-      selectGenero.value
-     const resultado =
-      recomienda(genero)
+     const genero = selectGenero.value
+     const resultado = recomienda(genero)
      alert(resultado)
     }
    } catch (e) {
     muestraError(e)
    }
   }
-  window["procesa"] = procesa
+  exportaAHtml(procesa)
 
   /** @param {string} genero */
   function recomienda(genero) {
    if (genero === "pop") {
-    return "Para el pop te " +
-     "recomiendo a Dua Lipa."
+    return "Para el pop te recomiendo a Dua Lipa."
    } else if (genero === "reg") {
-    return "Para el reguetón te " +
-     "recomiendo a Bad Bunny."
+    return "Para el reguetón te recomiendo a Bad Bunny."
    }
   }
  </script>

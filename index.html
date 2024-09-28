@@ -4,69 +4,57 @@
 <head>
 
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
-
  <title>PWA con MD</title>
 
- <meta name="description"
-   content="Ejemplo de PWA con
-    Material Design">
+ <!-- Resumen para los motores de búsqueda. -->
+ <meta name="description" content="Ejemplo de PWA con Material Design">
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <script src="js/registraServiceWorker.js"></script>
 
- <!-- Configuración de todas las
-   páginas y colores con CSS. -->
- <link rel="stylesheet"
-   href="css/estilos.css">
+ <meta name="viewport" content="width=device-width">
 
- <!-- Para manejar customized
-   built-in elements en Safari -->
- <script
-   src="ungap/custom-elements.js">
-   </script>
+ <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
+ <meta name="theme-color" content="#fffbfe">
 
- <!-- Configuración de todas las
-   páginas con JavaSript. -->
- <script type="module"
-   src="js/configura.js"></script>
+ <!-- Ícono para la página web, que normalmente se pone en la raíz del sitio.
+  Puede ser diferente para cada página. -->
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+
+ <!-- Configuración de la PWA para Chrome, Edge y Safari.
+  Debe ponerse en todas las páginas. -->
+ <link rel="manifest" href="site.webmanifest">
+
+ <!-- Permite a los navegadores, que como Safari no soportan el estándar
+  completo de custom elementsm, lo cumplan totalmente. Debe ponerse en todas
+  las páginas. -->
+ <script src="ungap/custom-elements.js"></script>
+
+ <!-- Configuración de todas las páginas con JavaSript. -->
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
 <body>
 
- <md-top-app-bar
-   class="center-aligned">
+ <md-top-app-bar class="center-aligned">
 
   <h1>PWA con MD</h1>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
-  <button type="button" title="Perfil"
-    slot="action"
-    class="md-standard-icon-button
-     avatar">
-   <span
-     class="material-symbols-outlined">
-    account_circle
-   </span>
+  <button type="button" class="md-standard-icon-button avatar" title="Perfil"
+    slot="action">
+   <span class="material-symbols-outlined">account_circle</span>
   </button>
 
  </md-top-app-bar>
 
  <main>
   <p>
-   Esta es la página principal de la
-   app. Las X que siguen son para que
-   veas como se comporta cuando se hace
-   scroll.
+   Esta es la página principal de la app. Las X que siguen son para que veas
+   como se comporta cuando se hace scroll.
   </p>
   <p>x</p>
   <p>x</p>
@@ -93,7 +81,7 @@
   <p>x</p>
  </main>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 

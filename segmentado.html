@@ -2,28 +2,21 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Botón segmentado - PWA con MD</title>
 
- <title>
-  Botón segmentado - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
- <link rel="stylesheet"
-   href="css/estilos.css">
- <script
-   src="ungap/custom-elements.js">
-   </script>
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
@@ -33,51 +26,39 @@
 
   <h1>Segmentado</h1>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
  </md-top-app-bar>
 
- <h1 id="headline">
-  Botón segmentado
- </h1>
+ <h1 id="headline">Botón segmentado</h1>
 
- <p class="md-segmented-button">
+ <main>
 
-  <input id="bueno" type="radio"
-    name="estado" checked value="2">
-  <label for="bueno">
-   <span
-     class="material-symbols-outlined">
-    done
-   </span>
-   Bueno
-  </label>
+  <p class="md-segmented-button">
 
-  <input id="intermedio" type="radio"
-    name="estado" value="1">
-  <label for="intermedio">
-   <span
-     class="material-symbols-outlined">
-    done
-   </span>
-   Intermedio
-  </label>
+   <input id="bueno" type="radio" name="estado" checked value="2">
+   <label for="bueno">
+    <span class="material-symbols-outlined">done</span>
+    Bueno
+   </label>
 
-  <input id="malo" type="radio"
-    name="estado" value="0">
-  <label for="malo">
-   <span
-     class="material-symbols-outlined">
-    done
-   </span>
-   Malo
-  </label>
+   <input id="intermedio" type="radio" name="estado" value="1">
+   <label for="intermedio">
+    <span class="material-symbols-outlined">done</span>
+    Intermedio
+   </label>
 
- </p>
+   <input id="malo" type="radio" name="estado" value="0">
+   <label for="malo">
+    <span class="material-symbols-outlined">done</span>
+    Malo
+   </label>
 
- <nav-drw id="nav"></nav-drw>
+  </p>
+
+ </main>
+
+ <nav-drw></nav-drw>
 
 </body>
 

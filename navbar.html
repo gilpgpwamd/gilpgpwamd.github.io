@@ -2,66 +2,49 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Barra de Navegación - PWA con MD</title>
 
- <title>
-  Barra de Navegación - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
- <link rel="stylesheet"
-   href="css/estilos.css">
- <script
-   src="ungap/custom-elements.js">
-   </script>
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_pestanas.css">
+ <link rel="expect" blocking="render" href="#navbar">
 
 </head>
 
-<body style="padding-bottom: 5rem;">
+<body
+  style="padding-bottom: 5rem;">
 
  <md-top-app-bar headline="headline">
 
   <h1>navegación</h1>
 
-  <button type="button" title="Agregar"
-    slot="action"
-    class="md-standard-icon-button">
-   <span
-     class="material-symbols-outlined">
-    add
-   </span>
+  <button type="button" class="md-standard-icon-button" title="Agregar"
+    slot="action">
+   <span class="material-symbols-outlined">add</span>
   </button>
-  <button type="button" title="Editar"
-    slot="action"
-    class="md-standard-icon-button">
-   <span
-     class="material-symbols-outlined">
-    edit
-   </span>
+  <button type="button" class="md-standard-icon-button" title="Editar"
+    slot="action">
+   <span class="material-symbols-outlined">edit</span>
   </button>
 
  </md-top-app-bar>
 
- <h1 id="headline">
-  Barra de navegación
- </h1>
+ <h1 id="headline">Barra de navegación</h1>
 
  <main>
   <p>
-   Esta página usa barra de navegación.
-   Las X que siguen son para que veas
-   como se comporta cuando se hace
-   scroll.
+   Esta página usa barra de navegación. Las X que siguen son para que veas como
+   se comporta cuando se hace scroll.
   </p>
   <p>x</p>
   <p>x</p>

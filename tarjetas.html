@@ -2,20 +2,21 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
+ <title>Tarjetas - PWA con MD</title>
+
+ <script src="js/registraServiceWorker.js"></script>
+
  <meta name="viewport" content="width=device-width">
-
- <title>
-  Tarjetas - PWA con MD
- </title>
-
  <meta name="theme-color" content="#fffbfe">
  <link rel="icon" sizes="32x32" href="favicon.ico">
  <link rel="manifest" href="site.webmanifest">
-
- <link rel="stylesheet" href="css/estilos.css">
  <script src="ungap/custom-elements.js"></script>
+
  <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
@@ -24,13 +25,13 @@
  <md-top-app-bar>
   <h1>Tarjetas</h1>
 
-  <button is="md-menu-button" slot="navigation" onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
  </md-top-app-bar>
 
  <div class="md-cards">
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/lobo-blanco-y-negro-397857/">
    <figure>
     <img alt="Lobo" src="img/pexels-steve-397857.jpg">
@@ -43,7 +44,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/foto-de-buho-ural-3732453/">
    <figure>
     <img alt="Buho" src="img/pexels-erik-karits-3732453.jpg">
@@ -56,7 +57,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/perro-de-pelo-corto-marron-y-blanco-acostado-3978352/">
    <figure>
     <img alt="Perro" src="img/pexels-creative-workshop-3978352.jpg">
@@ -69,7 +70,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/gatito-gris-en-bolsa-de-papel-plateada-141496/">
    <figure>
     <img alt="Gato" src="img/pexels-vadim-b-141496.jpg">
@@ -82,7 +83,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/leon-marron-2270848/">
    <figure>
     <img alt="León" src="img/pexels-ralph-2270848.jpg">
@@ -95,7 +96,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/oso-cafe-35435/">
    <figure>
     <img alt="Oso" src="img/pexels-rasmus-svinding-35435.jpg">
@@ -108,7 +109,7 @@
    </span>
   </a>
 
-  <a target="_blank" rel=”noopener noreferrer”
+  <a target="_blank" rel=”noreferrer”
     href="https://www.pexels.com/es-es/foto/animal-perro-mono-hierba-10226903/">
    <figure>
     <img alt="Coyote" src="img/pexels-esteban-arango-10226903.jpg">
@@ -123,7 +124,7 @@
 
  </div>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 

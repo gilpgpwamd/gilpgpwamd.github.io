@@ -2,37 +2,35 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
+ <title>Listas tree-line - PWA con MD</title>
+
+ <script src="js/registraServiceWorker.js"></script>
+
  <meta name="viewport" content="width=device-width">
-
- <title>
-  Listas tree-line - PWA con MD
- </title>
-
  <meta name="theme-color" content="#fffbfe">
  <link rel="icon" sizes="32x32" href="favicon.ico">
  <link rel="manifest" href="site.webmanifest">
-
- <link rel="stylesheet" href="css/estilos.css">
  <script src="ungap/custom-elements.js"></script>
+
  <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
 <body>
 
- <md-top-app-bar
-   headline="headline">
+ <md-top-app-bar headline="headline">
 
   <h1>tree-line</h1>
 
-  <button is="md-menu-button" slot="navigation" onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
  </md-top-app-bar>
 
- <h1 id="headline">
-  Listas tree-line
- </h1>
+ <h1 id="headline">Listas tree-line</h1>
 
  <main>
 
@@ -51,9 +49,7 @@
    </li>
 
    <li class="md-three-line icon">
-    <span class="material-symbols-outlined">
-     account_balance
-    </span>
+    <span class="material-symbols-outlined">account_balance</span>
     <span class="headline">
      Atenas 3
     </span>
@@ -106,8 +102,7 @@
    </li>
 
    <li>
-    <a class="md-three-line image"
-      target="_blank" rel=”noopener noreferrer”
+    <a class="md-three-line image" target="_blank" rel=”noreferrer”
       href="https://culturacolectiva.com/historia/ciudad-neza-su-historia-en-fotografias/">
      <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
      <span class="headline">
@@ -129,7 +124,7 @@
     <li>
      <p>
       <small>
-       <a target="_blank" rel=”noopener noreferrer”
+       <a target="_blank" rel=”noreferrer”
          href="https://www.pexels.com/es-es/foto/nina-mono-cara-sonriente-10961948/">
         La foto de la niña es de Moises Patrício, publicada en el sitio Pexels.
         Haz clic en este hipervínculo para más información.
@@ -140,7 +135,8 @@
     <li>
      <p>
       <small>
-       <a target="_blank" rel=”noopener noreferrer” href="https://www.pinterest.com.mx/ludresi/">
+       <a target="_blank" rel=”noreferrer”
+         href="https://www.pinterest.com.mx/ludresi/">
         La foto del Coyote de Neza es de Ludres Isan, publicada en el sitio
         Pinterest. Haz clic en este hipervínculo para más información.
        </a>
@@ -150,11 +146,11 @@
     <li>
      <p>
       <small>
-       <a target="_blank" rel=”noopener noreferrer”
+       <a target="_blank" rel=”noreferrer”
          href="https://www.pexels.com/es-es/foto/puente-golden-gate-san-francisco-california-3701822/">
-         La foto del puente de San Francisco es de Craig Dennis, publicada en el
-         sitio Pexels. Haz clic en este hipervínculo para más información.
-        </a>
+        La foto del puente de San Francisco es de Craig Dennis, publicada en el
+        sitio Pexels. Haz clic en este hipervínculo para más información.
+       </a>
       </small>
      </p>
     </li>
@@ -163,7 +159,7 @@
 
  </main>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 

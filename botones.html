@@ -2,29 +2,21 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Botones - PWA con MD</title>
 
- <title>
-  Botones - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
-
- <link rel="stylesheet"
-   href="css/estilos.css">
- <script
-   src="ungap/custom-elements.js">
-   </script>
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
@@ -34,9 +26,7 @@
 
   <h1>Botones</h1>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
  </md-top-app-bar>
 
@@ -44,20 +34,19 @@
 
   <p>
 
-   <button
-     class="md-filled-button">
+   <button class="md-filled-button">
     Primario
    </button>
 
-   <button
-     class="md-outline-button">
+   <button class="md-outline-button">
     Secundario
    </button>
+
   </p>
 
  </main>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 

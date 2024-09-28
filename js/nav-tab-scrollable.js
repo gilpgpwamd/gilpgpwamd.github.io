@@ -1,3 +1,4 @@
+import { querySelector } from "../lib/js/querySelector.js"
 import { resaltaSiEstasEn } from "../lib/js/resaltaSiEstasEn.js"
 
 export class NavTabScrollable extends HTMLElement {
@@ -71,7 +72,7 @@ export class NavTabScrollable extends HTMLElement {
     Tarjetas
    </a>
 
-   <a ${resaltaSiEstasEn(["/navtab.html"])} href="navtab.html">
+   <a id="navtab" ${resaltaSiEstasEn(["/navtab.html"])} href="navtab.html">
     <span class="material-symbols-outlined">swipe_left</span>
     Pestañas scrollable
    </a>

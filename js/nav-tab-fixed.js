@@ -16,7 +16,8 @@ export class NavTabFixed extends HTMLElement {
     Pestañas scrollable
    </a>
 
-   <a ${resaltaSiEstasEn(["/navTabFixed.html"])} href="navTabFixed.html">
+   <a id="navtabfixed" ${resaltaSiEstasEn(["/navTabFixed.html"])}
+     href="navTabFixed.html">
     <span class="material-symbols-outlined">tabs</span>
     Pestañas fijas
    </a>

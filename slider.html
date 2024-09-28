@@ -2,28 +2,21 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Sliders - PWA con MD</title>
 
- <title>
-  Sliders - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
- <link rel="stylesheet"
-   href="css/estilos.css">
- <script
-   src="ungap/custom-elements.js">
-   </script>
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
@@ -33,9 +26,7 @@
 
   <h1>Sliders</h1>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
  </md-top-app-bar>
 
@@ -43,17 +34,13 @@
 
   <md-slider-field>
    <label>Rango</label>
-   <input type="range"
-     slot="slider" min="1"
-     max="10">
-   <small slot="supporting">
-    Calcúlalo bien
-   </small>
+   <input type="range" slot="slider" min="1" max="10">
+   <small slot="supporting">Calcúlalo bien</small>
   </md-slider-field>
 
  </main>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 

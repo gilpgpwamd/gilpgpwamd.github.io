@@ -2,85 +2,53 @@
 <html lang="es">
 
 <head>
+
  <meta charset="UTF-8">
- <meta name="viewport"
-   content="width=device-width">
+ <title>Vista secundaria - PWA con MD</title>
 
- <title>
-  Vista secundaria - PWA con MD
- </title>
+ <script src="js/registraServiceWorker.js"></script>
 
- <meta name="theme-color"
-   content="#fffbfe">
- <link rel="icon" sizes="32x32"
-   href="favicon.ico">
- <link rel="manifest"
-   href="site.webmanifest">
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
 
- <!-- Configuración de todas las
-   páginas y colores con CSS. -->
- <link rel="stylesheet"
-   href="css/estilos.css">
-
- <!-- Para manejar customized
-   built-in elements en Safari -->
- <script
-   src="ungap/custom-elements.js">
-   </script>
-
- <!-- Configuración de todas las
-   páginas con JavaSript. -->
- <script type="module"
-   src="js/configura.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_completa.css">
 
 </head>
 
 <body>
 
- <md-top-app-bar class="medium"
-   headline="h1Headline">
+ <md-top-app-bar class="medium" headline="h1Headline">
 
   <h1>Secundaria</h1>
 
-  <button is="md-menu-button"
-    slot="navigation"
-    onclick="nav.abre()"></button>
+  <button is="md-menu-button" slot="navigation"></button>
 
-  <button type="button"
-    title="Agregar" slot="action"
-    class="md-standard-icon-button">
-   <span
-     class="material-symbols-outlined">
-    add
-   </span>
+  <button type="button" class="md-standard-icon-button" title="Agregar"
+    slot="action">
+   <span class="material-symbols-outlined">add</span>
   </button>
 
-  <button type="button"
-    title="Editar" slot="action"
-    class="md-standard-icon-button">
-   <span
-     class="material-symbols-outlined">
-    edit
-   </span>
+  <button type="button" class="md-standard-icon-button" title="Editar"
+    slot="action">
+   <span class="material-symbols-outlined">edit</span>
   </button>
 
-  <button is="md-overflow-button"
-    slot="action"
-    onclick="overflow.alterna(this)">
-  </button>
+  <button is="md-overflow-button" slot="action"
+    onclick="overflow.alterna(this)"></button>
 
  </md-top-app-bar>
 
- <h1 id="h1Headline">
-  Página secundaria
- </h1>
+ <h1 id="h1Headline">Página secundaria</h1>
 
  <main>
   <p>
-   Esta es una página secundaria de la
-   app. Las X que siguen son para que
-   veas como se comporta cuando se hace
-   scroll.
+   Esta es una página secundaria de la app. Las X que siguen son para que veas
+   como se comporta cuando se hace scroll.
   </p>
   <p>x</p>
   <p>x</p>
@@ -110,24 +78,18 @@
  <md-overflow-menu id="overflow">
 
   <button type="button">
-   <span
-     class="material-symbols-outlined">
-    star
-   </span>
+   <span class="material-symbols-outlined">star</span>
    Marcar favorito
   </button>
 
   <button type="button">
-   <span
-     class="material-symbols-outlined">
-    delete
-   </span>
+   <span class="material-symbols-outlined"> delete</span>
    Eliminar
   </button>
 
  </md-overflow-menu>
 
- <nav-drw id="nav"></nav-drw>
+ <nav-drw></nav-drw>
 
 </body>
 
