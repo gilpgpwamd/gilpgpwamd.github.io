@@ -94,8 +94,7 @@ html {
  --imageSize: 3.5rem;
  --videoWidth: 7.125rem;
  --videoHeight: 4rem;
- --scroll-headline-duracion: 2s:
- --md-sys-state-focus-indicator-outer-offset: 0.125rem;
+ --scroll-headline-duracion: 2s: --md-sys-state-focus-indicator-outer-offset: 0.125rem;
  --md-sys-state-focus-indicator-thickness: 0.1875rem;
  /* Pressed state layer opacity */
  --state-pressed-transparency-percentage: 84%;
@@ -156,5 +155,29 @@ a {
   --md-riple-color: #ffffff40;
   --md-sys-color-surface-container-low: var(--md-ref-palette-neutral20);
   --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral30);
+ }
+}
+
+@keyframes salePorLaIzquierda {
+ to {
+  translate: -100vw 0;
+ }
+}
+
+@keyframes entraPorLaDerecha {
+ from {
+  translate: 100vw 0;
+ }
+}
+
+@keyframes aparece {
+ from {
+  opacity: 0;
+ }
+}
+
+@keyframes desvanece {
+ to {
+  opacity: 0;
  }
 }
