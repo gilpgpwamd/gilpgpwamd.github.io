@@ -18,8 +18,7 @@
   /* Dragged state layer opacity */
   --md-sys-state-dragged-state-layer-opacity: 0.1599999964237213;
   /* Pressed state layer opacity */
-  /* --md-sys-state-pressed-state-layer-opacity: 0.11999999731779099; */
-  --md-sys-state-pressed-state-layer-opacity: 0.15999999731779099;
+  --md-sys-state-pressed-state-layer-opacity: 0.11999999731779099;
   /* Focus state layer opacity */
   --md-sys-state-focus-state-layer-opacity: 0.11999999731779099;
   /* Hover state layer opacity */

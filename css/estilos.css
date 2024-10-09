@@ -1,13 +1,11 @@
-/* Temas de Material Design 3  */
-@import url(./tokens.css);
-@import url(../lib/css/shape.css);
-@import url(../lib/css/motion.css);
-@import url(../lib/css/state.css);
-@import url(../lib/css/elevation.css);
-@import url(../lib/css/colors.module.css);
-@import url(../lib/css/typography.css);
-@import url(../lib/css/theme.light.css) (prefers-color-scheme: light);
-@import url(../lib/css/theme.dark.css) (prefers-color-scheme: dark);
+/* Selecciona el tema claro para Material Design 3. Puedes elegir
+ * light.css, light-mc.css o light-hc.css */
+@import url(light.css) screen and (prefers-color-scheme: light);
+/* Selecciona el tema oscuro para Material Design 3. Puedes elegir
+ * dark.css, dark-mc.css o dark-hc.css */
+@import url(dark.css) screen and (prefers-color-scheme: dark);
+/* Definiciones para Material Design 3  */
+@import url(../material-tokens/css/baseline.css);
 /* Fonts utilizados */
 @import url(../lib/css/roboto.css);
 @import url(../lib/css/material-symbols-outlined.css);
@@ -29,6 +27,8 @@
 @import url(../lib/css/md-navigation-bar.css);
 
 html {
+ /* Indica los temas del sistema operativo que son soportados. */
+ color-scheme: light dark;
  --tabWidth: 3.75rem;
  --anchoNav: 22.5rem;
 }
@@ -72,12 +72,15 @@ body {
 
 html {
  --Font: -apple-system, BlinkMacSystemFont, roboto, sans-serif;
- font-size: 1rem;
  --colIntIos: white;
  --colIntIosOnBk: #2acc2a;
  --colIntIosOnBkFc: #1bbb1b;
  --colIntIosOffBk: #dbdbdb;
  --colIntIosOffBkFc: #BDBDBD;
+ /* Plain typeface */
+ --md-ref-typeface-plain: var(--Font);
+ /* Brand typeface */
+ --md-ref-typeface-brand: var(--Font);
  --md-sys-typescale-label-large-weight-prominent:
   var(--md-ref-typeface-weight-bold);
  --md-box_shadow_level4:
@@ -94,7 +97,8 @@ html {
  --imageSize: 3.5rem;
  --videoWidth: 7.125rem;
  --videoHeight: 4rem;
- --scroll-headline-duracion: 2s: --md-sys-state-focus-indicator-outer-offset: 0.125rem;
+ --scroll-headline-duracion: 2s;
+ --md-sys-state-focus-indicator-outer-offset: 0.125rem;
  --md-sys-state-focus-indicator-thickness: 0.1875rem;
  /* Pressed state layer opacity */
  --state-pressed-transparency-percentage: 84%;
@@ -145,16 +149,12 @@ a {
 @media (prefers-color-scheme: light) {
  html {
   --md-riple-color: #00000020;
-  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral95);
-  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral90);
  }
 }
 
 @media (prefers-color-scheme: dark) {
  html {
   --md-riple-color: #ffffff40;
-  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral20);
-  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral30);
  }
 }
 
