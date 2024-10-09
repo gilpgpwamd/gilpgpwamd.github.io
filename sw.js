@@ -15,7 +15,7 @@
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "3.0"
+const VERSION = "3.1"
 
 /**
  * Nombre de la carpeta de caché.
